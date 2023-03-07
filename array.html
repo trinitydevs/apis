@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/gorillaz.css" />
+    <script>
+      function Mudarestado1(el) {
+        var display = document.getElementById(el).style.display;
+        if (display == "none")
+          document.getElementById(el).style.display = "block";
+        else document.getElementById(el).style.display = "none";
+      }
+
+      function Mudarestado2(el) {
+        var display = document.getElementById(el).style.display;
+        if (display == "none")
+          document.getElementById(el).style.display = "block";
+        else document.getElementById(el).style.display = "none";
+      }
+
+      function Mudarestado3(el) {
+        var display = document.getElementById(el).style.display;
+        if (display == "none")
+          document.getElementById(el).style.display = "block";
+        else document.getElementById(el).style.display = "none";
+      }
+
+      function Mudarestado4(el) {
+        var display = document.getElementById(el).style.display;
+        if (display == "none")
+          document.getElementById(el).style.display = "block";
+        else document.getElementById(el).style.display = "none";
+      }
+    </script>
+    <title>API's</title>
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="img/logo.png" alt="" />
+      <div id="placeholder">
+        <img id="pesquisa" src="img/pesquisa.jpg" alt="" />
+        <input placeholder="  Pesquisar"/>
+      </div>
+    </header>
+    <div id="titulo">
+      <h1>CONHEÇA OS NOSSOS <br>INTEGRANTES</h1>
+      <img id="integrantes" src="img/gorillaz.png" alt="">
+      <video width="320" height="240" controls>
+        <source src="video/teaser.mp4" type="video/mp4">
+        <source src="video/teaser.mp4" type="video/mp4">
+      Seu navegador n~~ao suporta tags de vídeo.
+      </video>
+    </div>
+    <main>
+      <div class="todas">
+      <div id="caixa-murdoc">
+        <img id="murdoc" src="img/murdoc_resized.jpg" alt="" />
+        <div id="btn1">
+          <div id="api-1">
+            <br />
+            <div id="nome1"></div>
+            <div id="idade1"></div>
+            <div id="alter1"></div>
+            <br />
+          </div>
+        </div>
+        <button type="button" onclick="Mudarestado1('btn1')"></button>
+      </div>
+
+      <div id="caixa-noodle">
+        <img id="noodle" src="img/noodle_resized.webp" alt="" />
+        <div id="btn2">
+          <div id="api-2">
+            <br />
+            <div id="nome2"></div>
+            <div id="idade2"></div>
+            <div id="alter2"></div>
+            <br />
+          </div>
+        </div>
+        <button type="button" onclick="Mudarestado2('btn2')"></button>
+      </div>
+
+      <div id="caixa-2d">
+        <img id="d-2" src="img/2d_resized.jpg" alt="" />
+        <div id="btn3">
+          <div id="api-3">
+            <br />
+            <div id="nome3"></div>
+            <div id="idade3"></div>
+            <div id="alter3"></div>
+            <br />
+          </div>
+        </div>
+        <button type="button" onclick="Mudarestado2('btn3')"></button>
+      </div>
+
+      <div id="caixa-russel">
+        <img id="russel" src="img/russel_resized.jpg" alt="" />
+        <div id="btn4">
+          <div id="api-4">
+            <br />
+            <div id="nome4"></div>
+            <div id="idade4"></div>
+            <div id="alter4"></div>
+            <br />
+          </div>
+        </div>
+        <button type="button" onclick="Mudarestado2('btn4')"></button>
+      </div>
+    </div>
+    </main>
+    <footer>
+      <div class="linha"> </div>
+    </footer>
+    <script src="api.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Bebas+Neue&family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("/img/22609.png");
+    background-repeat: no-repeat;
+}
+
+#principal{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 10%;
+    
+}
+
+#alinhar-texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img-api{
+    width: 80%;
+}
+
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 500%;
+    color: #e6e6e6;
+    text-shadow: 1px 5px 9px #00000050;
+    margin-left: 5%;
+}
+
+h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 200%;
+    color: #e6e6e6;
+    text-shadow: 1px 5px 9px #2e2e2e50;
+    margin-left: 15%;
+
+}
+
+#apis{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button{
+    margin-top: 15%;
+    width: 120%;
+    height: 60px;
+    background-color: rgb(231, 231, 231);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    color: #3b4eb6;
+    text-shadow: 1px 5px 7px #415f6677;
+    box-shadow:1px 8px 9px #3898ad77;;
+    font-size: 180%;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+button:hover{
+    transition: 300ms;
+    background-color: #d6d4d4;
+    width: 191%;
+    height: 61px;
+
+}
+
+

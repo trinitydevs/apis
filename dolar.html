@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="icon" type="imagem/png" href="img/world.webp"/>
+    <link rel="stylesheet" href="css/dolarcep.css">
+    <title>Dólar</title>
+</head>
+<body>
+    <div class="row">
+        <div id="cabecalho" class="col">
+            <img id="icon" src="img/world.webp" alt="">
+            <a class="destaques" href="dolarcep.html">
+                <p class="destaques">HOME</p>
+            </a>
+            <p class="destaques">APLICAÇÕES</p>
+            <p class="destaques">API</p>
+        </div>
+    </div>
+    <div id="inicio-dolar" class="row">
+        <div class="col-lg-6">
+            <h1 class="dolar" id="dolar">DÓLAR</h1>
+        </div>
+        <div class="col-lg-6">
+            <img id="secundaria" src="img/secundaria.png" alt="">
+        </div>
+    </div>
+    <div id="row">
+        <div id="central" class="col-12">
+            <p class="texto-api">Utilizando uma interface de programação de aplicação,<br> fazemos um contrato de serviço entre duas aplicações<br>distintas para que seja possível acompanhar o valor USD em comparação o BRL</p>
+        </div>
+    </div>
+    <div class="row">
+        <footer>
+            <div class="linha"> </div>
+        </footer>
+    </div>
+    <div class="row">
+        <div class="maioral">
+            <div>
+                <input type="text" id="rua" readonly>
+                <div id="codigo"></div>
+                <div id="nome"></div>
+            </div>
+            <form action="">
+                <label class="dinheiro" for="">Dólar</label>
+                <input id="valor-dolar" class="input-conversao" type="text">    
+                <input id="btn-converte" type="button" onclick="converter()" value="Converter">
+                <div id="resultado"></div>
+            </form>
+          
+        </div>
+    </div>   
+    <footer></footer>
+
+    <script>
+        function converter(){
+       var valor = parseFloat(document.getElementById("valor-dolar").value); 
+       var conversao = valor * 5;
+       document.getElementById("resultado").innerHTML = "O valor em dólar é " + conversao.toFixed(2);
+   }
+   </script>
+        
+</body>
+
+<script src="dolar.js"></script>
+</html>

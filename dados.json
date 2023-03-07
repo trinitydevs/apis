@@ -1,0 +1,24 @@
+{
+  "rock": {
+    "name": "Nirvana",
+    "album": "In Utero",
+    "style": "Grunge",
+    "price": "R$67,00",
+    "image": "<img src='img/inutero.jpg' width='300px'>"
+  },
+  "rock2": {
+    "name": "The Smiths",
+    "album": "Meat is Murder",
+    "style": "Rock Indie",
+    "price": "R$37,00",
+    "image": "<img src='img/thesmiths.jfif' width='300px'>"
+  },
+  "rock3": {
+    "name": "Paramore",
+    "album": "All I Wanted",
+    "style": "Rock",
+    "price": "R$89,00",
+    "image": "<img src='img/paramore.jpg' width='300px'>"
+  }
+
+}

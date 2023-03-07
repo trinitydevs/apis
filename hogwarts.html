@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="css/hogwarts.css" />
+    <script>
+      /*function matricula() {
+        document.getElementById("caixa").innerHTML =
+          imprimir;
+      }*/
+    </script>
+    <title>Formulário</title>
+  </head>
+  <body>
+    <header>
+      <a href="hogwarts.html">
+        <img id="logoo" src="img/aa.png" alt="" />
+      </a>
+    </header>
+    <main>
+      <div id="caixa">
+        <div id="alinhar">
+          <div id="dados-nome">
+            <label for="">NOME </label>
+            <input id="nome" type="text" />
+          </div>
+          <div id="dados-sobrenome">
+            <label for="">SOBRENOME </label>
+            <input id="sobrenome" type="text" />
+          </div>
+          <div id="dados-contato">
+            <label for="">CONTATO </label>
+            <input id="contato" type="text" />
+          </div>
+          <div id="dados-endereco">
+            <label for="">ENDEREÇO </label>
+            <input id="endereco" type="text" />
+          </div>
+          <div id="dados-especie">
+            <label for="">ESPÉCIE </label>
+            <input id="especie" type="text" />
+          </div>
+          <div id="dados-habilidade">
+            <label for="">HABILIDADE </label>
+            <input id="habilidade" type="text" />
+          </div>
+          <div id="dados-idade">
+            <label for="">DATA DE NASCIMENTO </label>
+            <input id="idade" type="date" />
+          </div>
+          <div id="alinha">
+            <div id="matricula" onclick="matricula()">
+              <button id="enviar" onclick="guardaDados()">OK</button>
+            </div>
+            <button id="imprimir" onclick="imprimir()">IMPRIMIR</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="imprimir">
+        <div id="nome_"></div>
+        <div id="sobrenome_"></div>
+        <div id="contato_"></div>
+        <div id="endereco_"></div>
+        <div id="especie_"></div>
+        <div id="habilidade_"></div>
+        <div id="idade_"></div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="hogwarts.js"></script>
+  </body>
+</html>

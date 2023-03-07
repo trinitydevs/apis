@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Poppins:wght@200&family=Ruda:wght@400;500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ruda', sans-serif;  
+    font-weight: bold;
+    font-size: 120%;
+    color: #fff;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(74,69,69,1) 49%, rgba(0,0,0,1) 100%);
+}
+
+header{
+    box-sizing: border-box;
+    background-color: #000000;
+    height: 30%;
+    display: flex;
+    gap: 4%;
+    
+}
+
+#titulo{
+    background: #d8376d;
+    background: linear-gradient(0deg, rgba(37, 138, 181, 0.11rgba(31, 166, 228, 0.144)228,1) 25%, rgba(31, 164, 226, 0.171) 71%, rgba(37, 138, 181, 0.13) 99%);
+    height: 280px;
+}
+
+h1{
+    margin-left: 5%;
+    font-family: 'Ruda', sans-serif;
+    font-size: 290%;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 20%;
+      
+    }
+
+  }
+
+#logo{ 
+    margin-top: 1.5%;
+    width: 9%;
+    height: 50%;
+    padding-left: 2%;
+}
+
+#pesquisa{
+    cursor: pointer;
+}
+
+.todas{
+    margin-top: 5%;
+    display: flex;
+    flex-direction:center;
+    align-items: center;
+    text-align: center;
+}
+
+#d-2, #russel, #noodle, #murdoc{
+    width: 50%;
+    border-radius: 120px;
+    box-shadow: 4px 7px 15px #d8376d;
+    transition: 400ms;
+}
+
+#murdoc:hover, #russel:hover, #d-2:hover, #noodle:hover{
+    transition: 700ms;
+    width: 54%;
+}
+
+button{
+    cursor: pointer;
+    margin-top: 5%;
+    display: block;
+    margin-left: 45%;
+    font-size: 120%;
+    font-weight: bold;
+    border: none;
+    background-color: rgba(22, 144, 214, 0.336);
+    border-radius: 100%;
+    height: 5vh;
+    width: 10%;
+    transition: 500ms;
+}
+
+button:hover{
+    transition: 700ms;
+    box-shadow: 1px 3px 9px #f52d70b9;
+}
+
+input{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 90%;
+    margin-top: 2%;
+    border-radius: 5px;
+    height: 3.6vh;
+    width:14em;
+    color: rgba(255, 255, 255, 0.781);
+    background-color: #000000;
+    border: 1px solid #000000;
+    border: none;
+    outline: none;
+}
+
+#placeholder{
+    margin: 1%;
+    box-shadow: 1px 1px 9px 1px #f52d6f;
+    border-radius: 10px;
+    display: flex;
+    height: 50px;
+    gap: 2%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.linha{
+    height: 1px;
+    width: 85%;
+    background-color: #f52d6f;
+    margin-top: 6%;
+    margin-bottom: 5%;
+    box-shadow: 5px 4px 5px #f52d6f;
+}
+
+#titulo{
+    display: flex;
+}
+
+
+#integrantes{
+    margin-top: 8%;
+    margin-left: 1%;
+    width: 15%;
+    height: 100%;
+}
+
+video{
+    border-radius: 60%;
+    padding: 2%;
+}
+
+@media screen and (max-width: 800px){
+    .todas{
+        flex-direction: column;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    #logo{
+        width: 40%;
+    }
+    #pesquisa{
+        margin-top: -0.5px;
+        width: 9%;
+        height: 80%;
+    }
+    #placeholder{
+        margin-top: 5%;
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+    video{
+        margin-top: 5%;
+        border-radius: 10px;
+        width: 20%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #integrantes{
+        display: none;
+    }
+
+    #d-2, #russel, #noodle, #murdoc{
+        width: 40%;
+        border-radius: 120px;
+        box-shadow: 4px 7px 15px #d8376d;
+        transition: 400ms;
+    }
+
+    button:hover{
+        transition: 700ms;
+        box-shadow: 1px 3px 9px #f52d70b9;
+    }
+
+    img{
+        margin-top: 5%;
+    }
+
+    button{
+        height: 8vh;
+    }
+
+}
+
+
+

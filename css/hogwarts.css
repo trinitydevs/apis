@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Lobster+Two:ital@0;1&family=Open+Sans:wght@300;400&family=Pacifico&family=Ruda:wght@400;500;800&family=Satisfy&display=swap');
+@media print{
+    label{
+        display: none;
+    }
+    #nome, #sobrenome, #idade{
+        display: none;
+    }
+
+    p{
+        color: #000;
+    }
+
+    button{
+        display: none;
+    }
+    #caixa{
+        margin-top: 5%;
+    }
+}
+
+@media print{
+    #nome_, #sobrenome_, #idade_{
+        display: block;
+    }
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF url("../img/hogwarts.jpg");
+    background-size:100%;
+}
+
+header{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+#logo{
+    width: 50%;
+}
+
+h1{
+    margin-top: 2%;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffffcb;
+    text-shadow: 1px 3px 9px #000000;
+    font-size: 150%;
+}
+
+p{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #ffffffcb;
+    font-size: 120%;
+}
+
+#titulo{
+    background-color: #0a233875;
+    width: 100%;
+}
+
+#maioral{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #13121281;
+    margin-left: 20%;
+    border-radius: 10px;
+    height: 40vh;
+    width: 50%;
+    padding: 15%; */
+}
+
+@keyframes float{
+	0%,100%{
+		transform:translatey(0)
+	}
+	50%{
+		
+		transform:translatey(-20px)
+	}
+}
+#logo{
+     animation: float 5s ease-in-out infinite;
+}
+
+#logoo{
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes cfb{
+    40%	{left:200px;}
+    40%	{left:199px;}
+    40%	{left:250px;}
+    40%	{left:260px;}
+    40%	{left:250px;}
+    100%{left:0px;}
+}
+    
+#sonserina, #grifinoria, #lufalufa, #corvinal{
+    border-radius: 5px;
+    position:relative;
+    width:101%;
+    height:102%;
+    animation-name:cfb;
+    animation-duration:2s;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+#maioral{
+    position: relative;
+    transition: 400ms;
+    animation-name:cfb;
+    animation-duration:2s;
+
+}
+
+#sonserina:hover{
+    height: 106%;
+    box-shadow: 1px 0 5px 4px #f3c13785;
+}
+
+#grifinoria:hover{
+    height: 106%;
+    box-shadow: 1px 0 5px 4px #f3c13785;
+}
+
+#corvinal:hover{
+    height: 106%;
+    box-shadow: 1px 0 5px 4px #f3c13785;
+}
+
+#lufalufa:hover{
+    height: 106%;
+    box-shadow: 1px 0 5px 4px #f3c13785;
+}
+
+
+#maioral{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+
+}
+
+footer{
+    margin-left: 15%;
+    width: 70%;
+    height: 1px;
+    background-color: #b99316c0;
+    margin-bottom: 5%;
+    box-shadow: 1px 3px 9px #d5eb1267;
+}
+
+@media screen and (max-width: 800px){
+    #maioral{
+        flex-direction: column;
+    }
+    #sonserina, #grifinoria, #lufalufa, #corvinal{
+        border-radius: 5px;
+        position:relative;
+        width:30%;
+        height:30%;
+        margin-top: 5%;
+        margin-left: 35%;
+        animation-name:cfb;
+        animation-duration:2s;
+        cursor: pointer;
+        transition: 400ms;
+    }
+}
+
+#msg{
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 50%;
+    color: #fff;
+    text-shadow: 1px 4px 9px #000000b2;
+    height: 50px;
+    width: 4%;
+    border: none;
+    background-color: #1229745e;
+    box-shadow: 1px 7px 9px #124a70;
+    transition: 400ms;
+}
+
+#msg:hover{
+    transition: 500ms;
+    box-shadow: 1px 7px 9px #706a12;
+}
+
+#caixa{
+    background-color: #1e64806c;
+    width: 20%;
+    height: 40vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 1px 6px 9px #06101baf;
+    padding: 3%;
+    gap: 5%;
+}
+
+#logo{
+        width: 35%;
+    }
+
+#alinhar{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: #ffffffc2;
+    text-shadow: 1px 6px 9px #124a70;
+    font-size: 140%;
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 1%;
+}
+
+input{
+    margin-bottom: 3%;
+    background-color: #124a7000;
+    border: none;
+    outline: 0;
+    color: #fff;
+    font-size: 115%;
+}
+
+#foto{
+    width: 60%;
+    border-radius: 100%;
+}
+
+#alinha{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 3%;
+}
+
+#enviar, #imprimir{
+    font-family: 'Barlow Condensed' ,sans-serif;
+    font-size: 120%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.616);
+    border: none;
+    width: 90px;
+    border-radius: 5px;
+    height: 5vh;
+    cursor: pointer;
+}
+
+#enviar:hover{
+    background-color: #cf9c10af;
+
+}
+
+#idade_, #sobrenome_, #nome_{
+    text-align: center;
+    color: #fff;
+    font-family: 'Barlow Condensed' ,sans-serif;
+    font-size: 100%;
+}
+
+#caixa{
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    height: 50vh;
+}
+
+#imprimir{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+button{
+    margin-top: 5%;
+}
+
+.swal-text{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px;
+}
+
+
+@media screen and (max-width: 1372px){
+    #caixa{
+        height: 65vh;
+    }
+
+    #logoo{
+        width: 50%;
+    }
+}
+
