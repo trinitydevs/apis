@@ -5,8 +5,8 @@
 }
 
 body{
-    background-image: url("../img/22609.png");
-    background-repeat: no-repeat;
+    background: rgb(186,243,255);
+    background: linear-gradient(90deg, rgba(186,243,255,1) 0%, rgba(32,198,237,1) 50%, rgba(186,243,255,1) 100%);
 }
 
 #principal{
