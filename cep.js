@@ -1,4 +1,4 @@
-fetch("http://viacep.com.br/ws/08090290/json/").then(response =>{
+fetch("http://viacep.com.br/ws/${cep}/json/").then(response =>{
     return response.json();
 
 }).then(corpo => {
